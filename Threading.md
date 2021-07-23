@@ -1,4 +1,4 @@
-# C++ 17
+# Threading C++ 17
 
 Implémentation des threads dits "modernes" dans une classe.
 Le programme écrira 5 fois "message".
@@ -7,6 +7,7 @@ Le programme écrira 5 fois "message".
 #include <functional>
 #include <thread>
 #include <mutex>
+#include <iostream>
 
 class Test {
 private:
