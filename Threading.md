@@ -30,13 +30,14 @@ public:
     thread_stop = true;
     th->join();
   };
-}
+};
 
 int main(int argc, char* argv[]){
   Test t;
   t.start();
   std::this_thread::sleep_for(std::chrono::seconds(5));
   t.stop();
+  return 0;
 }
 
 
