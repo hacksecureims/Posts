@@ -4,9 +4,9 @@ Implémentation des threads dits "modernes" dans une classe.
 Le programme écrira 5 fois "message".
 
 ```CPP
-#import <functional>
-#import <thread>
-#import <mutex>
+#include <functional>
+#include <thread>
+#include <mutex>
 
 class Test {
 private:
@@ -35,7 +35,7 @@ int main(int argc, char* argv[]){
   Test t;
   t.start();
   std::this_thread::sleep_for(std::chrono::seconds(5));
-  d.stop();
+  t.stop();
 }
 
 
