@@ -1,12 +1,12 @@
 # Écrire en Markdown
 
-## Sommaire
+# Sommaire
 
 - 
 - 
 - 
 
-## Introduction
+# Introduction
 
 Le Markdown est un langage de balisage léger. Il a été créé dans le but d'offrir une syntaxe facile pour pouvoir écrire du code HTML plus rapidement. Toutes les balises Markdown ont un équivalent en HTML.
 
@@ -14,67 +14,85 @@ Presque toutes les applications Markdown prennent en charge la syntaxe de base. 
 
 Le Markdown est principalement utilisé pour rédiger des commentaires et des documentations techniques, comme le fichier README dans les dépôts Github. 
 
-## Syntaxe basique
+# Syntaxe basique
 
-### Titres
+## Titres
 
 Pour créer un titre, ajoutez un dièse (#) devant un mot ou une phrase. Le nombre de dièse que vous utilisez doit correspondre au niveau de l'en-tête. Par exemple, pour créer un titre de niveau trois (`<h3>` en HTML), utilisez trois dièses (par exemple `### Mon titre`).
 
 |Markdown|HTML|Rendu|
 |---|---|---|
-|# Titre niveau 1|`<h1>Titre niveau 1</h1>`|<h1>Titre niveau 1</h1>|
-|# Titre niveau 2|`<h2>Titre niveau 2</h2>`|<h2>Titre niveau 2</h2>|
-|# Titre niveau 3|`<h3>Titre niveau 3</h3>`|<h3>Titre niveau 3</h3>|
-|# Titre niveau 4|`<h4>Titre niveau 4</h4>`|<h4>Titre niveau 4</h4>|
-|# Titre niveau 5|`<h5>Titre niveau 5</h5>`|<h5>Titre niveau 5</h5>|
-|# Titre niveau 6|`<h6>Titre niveau 6</h6>`|<h6>Titre niveau 6</h6>|
+|`# Titre niveau 1`|`<h1>Titre niveau 1</h1>`|<h1>Titre niveau 1</h1>|
+|`# Titre niveau 2`|`<h2>Titre niveau 2</h2>`|<h2>Titre niveau 2</h2>|
+|`# Titre niveau 3`|`<h3>Titre niveau 3</h3>`|<h3>Titre niveau 3</h3>|
+|`# Titre niveau 4`|`<h4>Titre niveau 4</h4>`|<h4>Titre niveau 4</h4>|
+|`# Titre niveau 5`|`<h5>Titre niveau 5</h5>`|<h5>Titre niveau 5</h5>|
+|`# Titre niveau 6`|`<h6>Titre niveau 6</h6>`|<h6>Titre niveau 6</h6>|
 
-#### Syntaxe alternative
+### Syntaxe alternative
 
 |Markdown|HTML|Rendu|
 |---|---|---|
-|Titre niveau 1<br>==========|`<h1>Titre niveau 1</h1>`|<h1>Titre niveau 1</h1>|
-|# Titre niveau 2<br>-----------------|`<h2>Titre niveau 2</h2>`|<h2>Titre niveau 2</h2>|
+|`Titre niveau 1`<br>`==========`|`<h1>Titre niveau 1</h1>`|<h1>Titre niveau 1</h1>|
+|`# Titre niveau 2`<br>`----------`|`<h2>Titre niveau 2</h2>`|<h2>Titre niveau 2</h2>|
 
-#### Meilleures pratiques à propos des titres
+### Meilleures pratiques à propos des titres
 
 Les interpréteurs Markdowns ne sont pas d'accords sur la façon de prendre en charge les espaces manquants entre les dièses et les titres ou autres. Pour une meilleur compatibilité, mettez toujours un espace entre les caractères dièses et les titres.
 
 |✔️ À faire|❌ À ne pas faire|
 |---|---|
-|# Voici un titre|#Voici un titre|
+|`# Voici un titre`|#Voici un titre|
 
 De la même façon qu'il est mieux d'ajouter des lignes vides avant et après les titres pour une meilleure compatibilité.
 
 |✔️ À faire|❌ À ne pas faire|
 |---|---|
-|Une ligne vide avant...<br><br># Voici un titre<br><br>...et une après.|Sans les lignes vides<br>#Voici un titre<br>ça pourrait ne pas sembler bon.|
+|`Une ligne vide avant...<br><br># Voici un titre<br><br>...et une après.`|Sans les lignes vides<br>#Voici un titre<br>ça pourrait ne pas sembler bon.|
 
-### Paragraphes
+## Paragraphes
 
 Pour créer des paragraphes, séparez votre texte par des lignes vides.
 
-#### Meilleures pratiques à propos des paragraphes
+### Meilleures pratiques à propos des paragraphes
 
 Contrairement aux paragraphes dans les listes, il ne faut pas indenter les paragraphes avec des espaces/tabulations.
 
 |✔️ À faire|❌ À ne pas faire|
 |---|---|
-|<p>Ne mettez pas de tabulations ou d'espaces.</p><p>Gardez les lignes alignées à gauche comme ça.</p>|<p>&nbsp;&nbsp;&nbsp;&nbsp;Cela peut entraîner des problèmes de formatage inattendus.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;N'ajoutez pas de tabulations ou d'espaces devant les paragraphes.</p>|
+|`Ne mettez pas de tabulations ou d'espaces.`<br>`Gardez les lignes alignées à gauche comme ça.`|&nbsp;&nbsp;&nbsp;&nbsp;`Cela peut entraîner des problèmes de formatage inattendus.`<br>&nbsp;&nbsp;&nbsp;&nbsp;`N'ajoutez pas de tabulations ou d'espaces devant les paragraphes.`|
 
-### Sauts de ligne
+## Sauts de ligne
 
 Pour créer un saut de ligne (`<br>`), terminez une ligne par deux espaces ou plus, puis tapez retour.
 
 |Markdown|HTML|Rendu|
 |---|---|---|
-|Je suis la première ligne.<br>Je suis la deuxième ligne. |`<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>`|<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>|
+|`Je suis la première ligne.<br>`<br>`Je suis la deuxième ligne.`|`<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>`|<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>|
 
-#### Meilleures pratiques à propos des sauts de lignes
+### Meilleures pratiques à propos des sauts de lignes
 
 Vous pouvez donc utiliser deux espaces ou plus (appelés "espaces blancs de fin de ligne") pour les sauts de ligne dans presque toutes les applications Markdown mais cette pratique est controversée. Il est difficile de voir les espaces en fin de ligne dans un éditeur et de nombreuses personnes mettent accidentellement ou intentionnellement deux espaces après chaque phrase. Il est donc préférable d'utiliser autre chose. Si l'application Markdown prend en charge l'HTML, vous pouvez utiliser le balise HTML `<br>`.<br><br>
 Pour des raisons de compatibilité, il vaut mieux utiliser cette balise à la fin de la ligne.<br><br>
-Il y a d'autres options mais non recommandées :<br>Certains langages dérivés permettent de taper une barre oblique inversée à la fin de la ligne (`\`) et d'autres permettent de taper `return` pour un créer un saut de ligne.
+Il y a d'autres options mais non recommandées :<br>Certains langages dérivés permettent de taper une barre oblique inversée à la fin de la ligne (`\`) et d'autres permettent de taper `return` pour un créer un saut de ligne, mais encore une fois, il ne vaut mieux pas les utiliser pour des raisons de compatibilités.
+
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`First line with the HTML tag after.<br>`<br>`And the next line.`|`First line with a backslash after. \`<br>`And the next line.`|
+
+## Accentuation
+
+Vous pouvez ajouter de l'emphase (accentuation) pour mettre votre texte en gras ou en italique.
+
+### Texte en gras
+
+Pour mettre votre texte en gras, ajouter deux astérisques (`**`) ou deux tirets bas (`__`) avant et après votre mot ou votre phrase. Pour mettre en gras seulement le milieu d'un mot, ajoutez des astérisques sans espaces autour des lettres.
+
+|Markdown|HTML|Rendu|
+|---|---|---|
+|`Texte en **gras**`|`Texte en <strong>gras</strong>`|Texte en <strong>gras</strong>|
+|`Texte en __gras__`|||
+||||
 
 # My first HackMD note (change me!)
 
