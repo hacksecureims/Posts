@@ -16,7 +16,7 @@ Le Markdown est principalement utilisé pour rédiger des commentaires et des do
 
 # Syntaxe basique
 
-## Titres
+## Les titres
 
 Pour créer un titre, ajoutez un dièse (#) devant un mot ou une phrase. Le nombre de dièse que vous utilisez doit correspondre au niveau de l'en-tête. Par exemple, pour créer un titre de niveau trois (`<h3>` en HTML), utilisez trois dièses (par exemple `### Mon titre`).
 
@@ -34,7 +34,7 @@ Pour créer un titre, ajoutez un dièse (#) devant un mot ou une phrase. Le nomb
 |Markdown|HTML|Rendu|
 |---|---|---|
 |Titre niveau 1<br>==========|`<h1>Titre niveau 1</h1>`|<h1>Titre niveau 1</h1>|
-|# Titre niveau 2<br>-----------------|`<h2>Titre niveau 2</h2>`|<h2>Titre niveau 2</h2>|
+|Titre niveau 2<br>-----------------|`<h2>Titre niveau 2</h2>`|<h2>Titre niveau 2</h2>|
 
 ### Meilleures pratiques à propos des titres
 
@@ -50,7 +50,7 @@ De la même façon qu'il est mieux d'ajouter des lignes vides avant et après le
 |---|---|
 |Une ligne vide avant...<br><br># Voici un titre<br><br>...et une après.|Sans les lignes vides<br>#Voici un titre<br>ça pourrait ne pas sembler bon.|
 
-## Paragraphes
+## Les paragraphes
 
 Pour créer des paragraphes, séparez votre texte par des lignes vides.
 
@@ -62,7 +62,7 @@ Contrairement aux paragraphes dans les listes, il ne faut pas indenter les parag
 |---|---|
 |<p>Ne mettez pas de tabulations ou d'espaces.</p><p>Gardez les lignes alignées à gauche comme ça.</p>|<p>&nbsp;&nbsp;&nbsp;&nbsp;Cela peut entraîner des problèmes de formatage inattendus.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;N'ajoutez pas de tabulations ou d'espaces devant les paragraphes.</p>|
 
-## Sauts de ligne
+## Les sauts de ligne
 
 Pour créer un saut de ligne (`<br>`), terminez une ligne par deux espaces ou plus, puis tapez retour.
 
@@ -80,121 +80,169 @@ Il y a d'autres options mais non recommandées :<br>Certains langages dérivés 
 |---|---|
 |First line with the HTML tag after.<br>And the next line.|First line with a backslash after. \ And the next line.|
 
-## Accentuation
+## L'accentuation
 
 Vous pouvez ajouter de l'emphase (accentuation) pour mettre votre texte en gras ou en italique.
 
 ### Texte en gras
 
-Pour mettre votre texte en gras, ajouter deux astérisques (`**`) ou deux tirets bas (`__`) avant et après votre mot ou votre phrase. Pour mettre en gras seulement le milieu d'un mot, ajoutez des astérisques sans espaces autour des lettres.
+Pour mettre votre texte en gras, ajouter deux astérisques (`**`) ou deux tirets bas (`__`) avant et après votre mot ou votre phrase. Pour mettre en gras seulement le milieu d'un mot, ajoutez deux astérisques sans espaces autour des lettres.
 
 |Markdown|HTML|Rendu|
 |---|---|---|
-|`Texte en **gras**`|`Texte en <strong>gras</strong>`|Texte en <strong>gras</strong>|
-|`Texte en __gras__`|||
-||||
+|`Texte en **gras**`|`Texte en <strong>gras</strong>`|Texte en **gras**|
+|`Texte en __gras__`|`Texte en <strong>gras</strong>`|Texte en __gras__|
+|`Texte**en**gras`|`Texte<strong>en</strong>gras`|Texte**en**gras|
 
-# My first HackMD note (change me!)
+### Meilleures pratiques à propos des caractères gras
 
-###### tags: `Tag(change me!)`
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`Texte**en**gras`|`Texte__en__gras`|
 
-> This note is yours, feel free to play around.  :video_game: 
-> Type on the left :arrow_left: and see the rendered result on the right. :arrow_right: 
+### Texte en italique
 
-## :memo: Where do I start?
+Pour mettre votre texte en italique, ajouter un astérisque(`*`) ou un tiret bas (`_`) avant et après votre mot ou votre phrase. Pour mettre en italique seulement le milieu d'un mot, ajoutez un astérisque sans espaces autour des lettres.
 
-### Step 1: Change the title and add a tag
+|Markdown|HTML|Rendu|
+|---|---|---|
+|`Texte en *italique*`|`Texte en <em>italique</em>`|Texte en *italique*|
+|`Texte en _italique_`|`Texte en <em>italique</em>`|Texte en _italique_|
+|`Texte*en*gras`|`Texte<em>en</em>italique`|Texte*en*italique|
 
-- [x] Create my first HackMD note (this one!)
-- [ ] Change its title
-- [ ] Add a tag
+### Meilleures pratiques à propos des caractères gras
 
-:rocket: 
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`Texte*en*gras`|`Texte_en_gras`|
 
-### Step 2: Write something in Markdown
+### Texte en gras ET en italique
 
-Let's try it out!
-Apply different styling to this paragraph:
-**HackMD gets everyone on the same page with Markdown.** ==Real-time collaborate on any documentation in markdown.== Capture fleeting ideas and formalize tribal knowledge.
+Pour mettre votre texte en gras et en italique, ajouter trois astérisques (`***`) ou trois tirets bas (`___`) avant et après votre mot ou votre phrase. Pour mettre en gras et en italique seulement le milieu d'un mot, ajoutez trois astérisques sans espaces autour des lettres.
 
-- [x] **Bold**
-- [ ] *Italic*
-- [ ] Super^script^
-- [ ] Sub~script~
-- [ ] ~~Crossed~~
-- [x] ==Highlight==
+|Markdown|HTML|Rendu|
+|---|---|---|
+|`Texte très ***important***`|`Texte très <strong><em>important</em></strong>`|Texte très ***important***|
+|`Texte très ___important___`|`Texte très <strong><em>important</em></strong>`|Texte très ___important___|
+|`Texte très __*important*__`|`Texte très <strong><em>important</em></strong>`|Texte très __*important*__|
+|`Texte très **_important_**`|`Texte très <strong><em>important</em></strong>`|Texte très **_important_**|
+|`Texte***très***important`|`Texte<strong><em>très</em></strong>important`|Texte***très***important|
 
-:::info
-:bulb: **Hint:** You can also apply styling from the toolbar at the top :arrow_upper_left: of the editing area.
+### Meilleures pratiques à propos des caractères gras
 
-![](https://i.imgur.com/Cnle9f9.png)
-:::
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`Texte***très***important`|`Texte___très___important`|
 
-> Drag-n-drop image from your file system to the editor to paste it!
+## Les citations
 
-### Step 3: Invite your team to collaborate!
+Pour créer une citation, il suffit d'ajouter `>` devant le paragraphe.
 
-Click on the <i class="fa fa-share-alt"></i> **Sharing** menu :arrow_upper_right: and invite your team to collaborate on this note!
+`> Le principe de l'évolution est beaucoup plus rapide en informatique que chez le bipède.`
 
-![permalink setting demo](https://i.imgur.com/PjUhQBB.gif)
+donnera : 
 
-- [ ] Register and sign-in to HackMD (to use advanced features :tada: ) 
-- [ ] Set Permalink for this note
-- [ ] Copy and share the link with your team
+> Le principe de l'évolution est beaucoup plus rapide en informatique que chez le bipède.
 
-:::info
-:pushpin: Want to learn more? ➜ [HackMD Tutorials](https://hackmd.io/c/tutorials) 
-:::
+### Citation avec plusieurs paragraphes
 
----
+Les blocs de citations peuvent contenir plusieurs paragraphes. Il faut ajouter un chevron (`>`) entre chaque paragraphe.
 
-## BONUS: More cool ways to HackMD!
-
-- Table
-
-| Features          | Tutorials               |
-| ----------------- |:----------------------- |
-| GitHub Sync       | [:link:][GitHub-Sync]   |
-| Browser Extension | [:link:][HackMD-it]     |
-| Book Mode         | [:link:][Book-mode]     |
-| Slide Mode        | [:link:][Slide-mode]    | 
-| Share & Publish   | [:link:][Share-Publish] |
-
-[GitHub-Sync]: https://hackmd.io/c/tutorials/%2Fs%2Flink-with-github
-[HackMD-it]: https://hackmd.io/c/tutorials/%2Fs%2Fhackmd-it
-[Book-mode]: https://hackmd.io/c/tutorials/%2Fs%2Fhow-to-create-book
-[Slide-mode]: https://hackmd.io/c/tutorials/%2Fs%2Fhow-to-create-slide-deck
-[Share-Publish]: https://hackmd.io/c/tutorials/%2Fs%2Fhow-to-publish-note
-
-- LaTeX for formulas
-
-$$
-x = {-b \pm \sqrt{b^2-4ac} \over 2a}
-$$
-
-- Code block with color and line numbers：
-```javascript=16
-var s = "JavaScript syntax highlighting";
-alert(s);
+```
+> Le principe de l'évolution est beaucoup plus rapide en informatique que chez le bipède.
+>
+> Quelle prétention de prétendre que l'informatique est récente : Adam et Eve avaient déjà un Apple !
 ```
 
-- UML diagrams
-```sequence
-Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!
-Note left of Alice: Alice responds
-Alice->Bob: Where have you been?
+donnera : 
+
+> Le principe de l'évolution est beaucoup plus rapide en informatique que chez le bipède.
+>
+> Quelle prétention de prétendre que l'informatique est récente : Adam et Eve avaient déjà un Apple !
+
+### Citation imbriquée
+
+Les blocs de citations peuvent être imbriqués. Ajouter deux chevrons (`>>`) devant la citation que vous voulez imbriquer.
+
 ```
-- Auto-generated Table of Content
-[ToC]
+> Le principe de l'évolution est beaucoup plus rapide en informatique que chez le bipède.
+>
+>> Quelle prétention de prétendre que l'informatique est récente : Adam et Eve avaient déjà un Apple !
+```
 
-> Leave in-line comments! [color=#3b75c6]
+donnera : 
 
-- Embed YouTube Videos
+> Le principe de l'évolution est beaucoup plus rapide en informatique que chez le bipède.
+>
+>> Quelle prétention de prétendre que l'informatique est récente : Adam et Eve avaient déjà un Apple !
 
-{%youtube PJuNmlE74BQ %}
+### Citation avec d'autres éléments
 
-> Put your cursor right behind an empty bracket {} :arrow_left: and see all your choices.
+La plupart des éléments Markdown peuvent contenir d'autres éléments Markdown, mais pas tous. Il faut tester différentes combinaisons.
 
-- And MORE ➜ [HackMD Tutorials](https://hackmd.io/c/tutorials)
+```
+> ### Liste de course
+> 
+> - Clé USB
+> - **Adhésion SAFIR**
+> - Fruits (*peut être*)
+>> par John Doe
+```
+
+donnera : 
+
+> ### Liste de course
+> 
+> - Clé USB
+> - **Adhésion SAFIR**
+>   - Fruits (*peut être*)
+
+### Meilleures pratiques à propos des citations
+
+Par soucis de compatibilité, ajoutez toujours des lignes vides avant et après les citations.
+
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`bla bla avant`<br><br>`> Ceci est une citation`<br><br>`bla bla après`|`bla bla avant`<br>`> Ceci est une citation`<br>`bla bla après`|
+
+## Les listes
+
+Vous pouvez organiser les éléments en listes ordonnées et non ordonnées.
+
+### Liste ordonnée
+
+Les listes ordonnées commencent par des nombres suivis d'un point. Les nombres n'ont pas besoin d'être dans l'ordre numérique. Certaines applications ont besoin que la liste commence par 1.
+
+|Markdown|HTML|Rendu|
+|---|---|---|
+|`1. Un`<br>`2. Deux`<br>`3. Trois`<br>`4. Quatre`|`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ol>`|<ol><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ol>|
+|`1. Un`<br>`1. Deux`<br>`1. Trois`<br>`1. Quatre`|`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ol>`|<ol><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ol>|
+|`1. Un`<br>`8. Deux`<br>`3. Trois`<br>`5. Quatre`|`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ol>`|<ol><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ol>|
+|`1. Un`<br>`2. Deux`<br>&nbsp;&nbsp;&nbsp;&nbsp;`1. UnUn`<br>&nbsp;&nbsp;&nbsp;&nbsp;`2. DeuxDeux`<br>`3. Trois`|`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<ol>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>UnUn</li>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>DeuxDeux</li>`<br>`</ol>`<br>`<li>Trois</li>`<br>`</ol>`|<ol><li>Un</li><li>Deux</li><ol><li>UnUn</li><li>DeuxDeux</li></ol><li>Trois</li></ol>|
+
+### Meilleures pratiques à propos des listes ordonnées
+
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`1. First item`<br>`2. Second item`|`1) First item`<br>`2) Second item`|
+
+### Liste non ordonnée
+
+Les listes non ordonnées commencent soit par des tirets (`-`), soit par des astérisques (`*`), soit par des plus (`+`) devant les lignes. Vous pouvez indenter un ou plusieurs items pour créer une liste imbriquée.
+
+|Markdown|HTML|Rendu|
+|---|---|---|
+|`- Un`<br>`- Deux`<br>`- Trois`<br>`- Quatre`|`<ul>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ul>`|<ul><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ul>|
+|`* Un`<br>`* Deux`<br>`* Trois`<br>`* Quatre`|`<ul>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ul>`|<ul><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ul>|
+|`+ Un`<br>`+ Deux`<br>`+ Trois`<br>`+ Quatre`|`<ul>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ul>`|<ul><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ul>|
+|`- Un`<br>`- Deux`<br>&nbsp;&nbsp;&nbsp;&nbsp;`- UnUn`<br>&nbsp;&nbsp;&nbsp;&nbsp;`- DeuxDeux`<br>`- Trois`|`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<ol>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>UnUn</li>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>DeuxDeux</li>`<br>`</ol>`<br>`<li>Trois</li>`<br>`</ol>`|<ul><li>Un</li><li>Deux</li><ul><li>UnUn</li><li>DeuxDeux</li></ul><li>Trois</li></ul>|
+
+### Meilleures pratiques à propos des listes non ordonnées
+
+Encore une fois, les applications Markdown ne gèrent pas toutes de la même façon les différents délimiteurs dans la même liste. Pour une meilleure compatibilité, ne mélangez pas les délimiteurs dans la même liste. Choisissez en un et gardez le.
+
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`- Un`<br>`- Deux`<br>`- Trois`<br>`- Quatre`|`+ Un`<br>`* Deux`<br>`- Trois`<br>`+ Quatre`|
+
+[ SUITE A VENIR ]
