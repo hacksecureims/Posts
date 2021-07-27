@@ -22,19 +22,19 @@ Pour créer un titre, ajoutez un dièse (#) devant un mot ou une phrase. Le nomb
 
 |Markdown|HTML|Rendu|
 |---|---|---|
-|`# Titre niveau 1`|`<h1>Titre niveau 1</h1>`|<h1>Titre niveau 1</h1>|
-|`# Titre niveau 2`|`<h2>Titre niveau 2</h2>`|<h2>Titre niveau 2</h2>|
-|`# Titre niveau 3`|`<h3>Titre niveau 3</h3>`|<h3>Titre niveau 3</h3>|
-|`# Titre niveau 4`|`<h4>Titre niveau 4</h4>`|<h4>Titre niveau 4</h4>|
-|`# Titre niveau 5`|`<h5>Titre niveau 5</h5>`|<h5>Titre niveau 5</h5>|
-|`# Titre niveau 6`|`<h6>Titre niveau 6</h6>`|<h6>Titre niveau 6</h6>|
+|# Titre niveau 1|`<h1>Titre niveau 1</h1>`|<h1>Titre niveau 1</h1>|
+|# Titre niveau 2|`<h2>Titre niveau 2</h2>`|<h2>Titre niveau 2</h2>|
+|# Titre niveau 3|`<h3>Titre niveau 3</h3>`|<h3>Titre niveau 3</h3>|
+|# Titre niveau 4|`<h4>Titre niveau 4</h4>`|<h4>Titre niveau 4</h4>|
+|# Titre niveau 5|`<h5>Titre niveau 5</h5>`|<h5>Titre niveau 5</h5>|
+|# Titre niveau 6|`<h6>Titre niveau 6</h6>`|<h6>Titre niveau 6</h6>|
 
 ### Syntaxe alternative
 
 |Markdown|HTML|Rendu|
 |---|---|---|
-|`Titre niveau 1`<br>`==========`|`<h1>Titre niveau 1</h1>`|<h1>Titre niveau 1</h1>|
-|`# Titre niveau 2`<br>`----------`|`<h2>Titre niveau 2</h2>`|<h2>Titre niveau 2</h2>|
+|Titre niveau 1<br>==========|`<h1>Titre niveau 1</h1>`|<h1>Titre niveau 1</h1>|
+|# Titre niveau 2<br>-----------------|`<h2>Titre niveau 2</h2>`|<h2>Titre niveau 2</h2>|
 
 ### Meilleures pratiques à propos des titres
 
@@ -42,13 +42,13 @@ Les interpréteurs Markdowns ne sont pas d'accords sur la façon de prendre en c
 
 |✔️ À faire|❌ À ne pas faire|
 |---|---|
-|`# Voici un titre`|#Voici un titre|
+|# Voici un titre|#Voici un titre|
 
 De la même façon qu'il est mieux d'ajouter des lignes vides avant et après les titres pour une meilleure compatibilité.
 
 |✔️ À faire|❌ À ne pas faire|
 |---|---|
-|`Une ligne vide avant...<br><br># Voici un titre<br><br>...et une après.`|Sans les lignes vides<br>#Voici un titre<br>ça pourrait ne pas sembler bon.|
+|Une ligne vide avant...<br><br># Voici un titre<br><br>...et une après.|Sans les lignes vides<br>#Voici un titre<br>ça pourrait ne pas sembler bon.|
 
 ## Paragraphes
 
@@ -60,7 +60,7 @@ Contrairement aux paragraphes dans les listes, il ne faut pas indenter les parag
 
 |✔️ À faire|❌ À ne pas faire|
 |---|---|
-|`Ne mettez pas de tabulations ou d'espaces.`<br>`Gardez les lignes alignées à gauche comme ça.`|&nbsp;&nbsp;&nbsp;&nbsp;`Cela peut entraîner des problèmes de formatage inattendus.`<br>&nbsp;&nbsp;&nbsp;&nbsp;`N'ajoutez pas de tabulations ou d'espaces devant les paragraphes.`|
+|<p>Ne mettez pas de tabulations ou d'espaces.</p><p>Gardez les lignes alignées à gauche comme ça.</p>|<p>&nbsp;&nbsp;&nbsp;&nbsp;Cela peut entraîner des problèmes de formatage inattendus.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;N'ajoutez pas de tabulations ou d'espaces devant les paragraphes.</p>|
 
 ## Sauts de ligne
 
@@ -68,7 +68,7 @@ Pour créer un saut de ligne (`<br>`), terminez une ligne par deux espaces ou pl
 
 |Markdown|HTML|Rendu|
 |---|---|---|
-|`Je suis la première ligne.<br>`<br>`Je suis la deuxième ligne.`|`<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>`|<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>|
+|Je suis la première ligne.<br>Je suis la deuxième ligne. |`<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>`|<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>|
 
 ### Meilleures pratiques à propos des sauts de lignes
 
@@ -78,7 +78,7 @@ Il y a d'autres options mais non recommandées :<br>Certains langages dérivés 
 
 |✔️ À faire|❌ À ne pas faire|
 |---|---|
-|`First line with the HTML tag after.<br>`<br>`And the next line.`|`First line with a backslash after. \`<br>`And the next line.`|
+|First line with the HTML tag after.<br>And the next line.|First line with a backslash after. \ And the next line.|
 
 ## Accentuation
 
