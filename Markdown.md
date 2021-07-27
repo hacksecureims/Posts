@@ -1,5 +1,11 @@
 # Écrire en Markdown
 
+## Sommaire
+
+- 
+- 
+- 
+
 ## Introduction
 
 Le Markdown est un langage de balisage léger. Il a été créé dans le but d'offrir une syntaxe facile pour pouvoir écrire du code HTML plus rapidement. Toutes les balises Markdown ont un équivalent en HTML.
@@ -29,6 +35,46 @@ Pour créer un titre, ajoutez un dièse (#) devant un mot ou une phrase. Le nomb
 |---|---|---|
 |Titre niveau 1<br>==========|`<h1>Titre niveau 1</h1>`|<h1>Titre niveau 1</h1>|
 |# Titre niveau 2<br>-----------------|`<h2>Titre niveau 2</h2>`|<h2>Titre niveau 2</h2>|
+
+#### Meilleures pratiques à propos des titres
+
+Les interpréteurs Markdowns ne sont pas d'accords sur la façon de prendre en charge les espaces manquants entre les dièses et les titres ou autres. Pour une meilleur compatibilité, mettez toujours un espace entre les caractères dièses et les titres.
+
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|# Voici un titre|#Voici un titre|
+
+De la même façon qu'il est mieux d'ajouter des lignes vides avant et après les titres pour une meilleure compatibilité.
+
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|Une ligne vide avant...<br><br># Voici un titre<br><br>...et une après.|Sans les lignes vides<br>#Voici un titre<br>ça pourrait ne pas sembler bon.|
+
+### Paragraphes
+
+Pour créer des paragraphes, séparez votre texte par des lignes vides.
+
+#### Meilleures pratiques à propos des paragraphes
+
+Contrairement aux paragraphes dans les listes, il ne faut pas indenter les paragraphes avec des espaces/tabulations.
+
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|<p>Ne mettez pas de tabulations ou d'espaces.</p><p>Gardez les lignes alignées à gauche comme ça.</p>|<p>&nbsp;&nbsp;&nbsp;&nbsp;Cela peut entraîner des problèmes de formatage inattendus.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;N'ajoutez pas de tabulations ou d'espaces devant les paragraphes.</p>|
+
+### Sauts de ligne
+
+Pour créer un saut de ligne (`<br>`), terminez une ligne par deux espaces ou plus, puis tapez retour.
+
+|Markdown|HTML|Rendu|
+|---|---|---|
+|Je suis la première ligne.<br>Je suis la deuxième ligne. |`<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>`|<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>|
+
+#### Meilleures pratiques à propos des sauts de lignes
+
+Vous pouvez donc utiliser deux espaces ou plus (appelés "espaces blancs de fin de ligne") pour les sauts de ligne dans presque toutes les applications Markdown mais cette pratique est controversée. Il est difficile de voir les espaces en fin de ligne dans un éditeur et de nombreuses personnes mettent accidentellement ou intentionnellement deux espaces après chaque phrase. Il est donc préférable d'utiliser autre chose. Si l'application Markdown prend en charge l'HTML, vous pouvez utiliser le balise HTML `<br>`.<br><br>
+Pour des raisons de compatibilité, il vaut mieux utiliser cette balise à la fin de la ligne.<br><br>
+Il y a d'autres options mais non recommandées :<br>Certains langages dérivés permettent de taper une barre oblique inversée à la fin de la ligne (`\`) et d'autres permettent de taper `return` pour un créer un saut de ligne.
 
 # My first HackMD note (change me!)
 
