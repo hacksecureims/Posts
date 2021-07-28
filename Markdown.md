@@ -746,7 +746,7 @@ Ce qui donnera :
 
 Pour créer un tableau, utilises 3 ou plus de tirets (`---`) pour créer les entêtes des colonnes et les pipes (`\`) pour séparer les colonnes. Pour des raisons de compatibilité, il vaut mieux placer un pipe également à la fin de chaque ligne.
 
-Tu peux également formater le texte dans les tableaux à l'aide des emphases vus précédemment comme les étoiles pour rendre gras ou italique (`**gras**`, `_italique_`).
+Tu peux également formater le texte dans les tableaux à l'aide des emphases vus précédemment comme les étoiles pour rendre gras ou italique (`**gras**`, `_italique_`). Par contre, les titres, les citations, les listes, les séparations horizontales les images ou les balises HTML ne fonctionneront pas dans un tableau.
 
 La largeur des cellules peuvent varier, le tableau aura le même rendu.
 
@@ -766,39 +766,100 @@ Ce qui donnera :
 
 ***
 
-| Syntaxe     | Description |
+| _Syntaxe_   | Description |
 | ----------- | ----------- |
-| En-tête     | Titre       |
+| En-tête     | **Titre**   |
 | Paragraphe  | Texte       |
 
-| Syntax| Description |
+| _Syntaxe_| Description |
 | --- | ----------- |
-|En-tête| Titre|
+|En-tête| **Titre**|
 |Paragraphe | Texte       |
 
 ***
 
 Tu peux aussi aligner les éléments du tableau en ajoutant deux points (`:`) à certains endroits. Il s'appliquera alors à **toute la colonne**.
 
+```
+| Gauche      | Centré      | Droite        |
+| :---        |    :----:   |          ---: |
+| Un          | Trois       | Cinq          |
+| Deux        | Quatre      | Six           |
+```
+
+| Gauche      | Centré      | Droite        |
+| :---        |    :----:   |          ---: |
+| Un          | Trois       | Cinq          |
+| Deux        | Quatre      | Six           |
+
+## Liste de tâches
+
+Tu peux aussi créer des listes interactives grâce à des checkboxs. Ces checkboxs sont évidemment clickables dépendant de l'application Markdown que vous utilisez. 
+
+```
+- [x] Sélectionné par défaut
+- [ ] Pas sélectionné
+- [ ] Finir ce tutoriel
+```
+
+- [x] Sélectionné par défaut
+- [ ] Pas sélectionné
+- [ ] Finir ce tutoriel
+
+***
+
+## Émoji
+
+Il y a deux façons d'ajouter des émojis.
+
+1. Copie / colle l'émoji depuis un site comme [Emojipedia](https://emojipedia.org) dans le document Markdown.
+2. Insérer le code de l'émoji directement mais ces codes peuvent varier en fonction de l'application et l'appareil sur lequel le fichier est affiché. Ce code est à ajouter entre deux `:`.
+
+```
+1. 😂
+2. :joy:
+```
+
+1. 😂
+2. :joy:
+
+## Désactiver un lien
+
+On l'a vu plus haut, certaines applications Markdown lient automatiquement les liens que vous écrivez. Pour les désactiver, il suffit d'ajouter le lien entre (`` ` ``)
+
+``> Ceci est un lien désactivé : `http://exemple.com` ``
+
+>  Ceci est un lien désactivé : `http://exemple.com` 
+
 ## LaTeX
 
-- LaTeX for formulas
+- Formules mathématiques avec LaTeX
+
+```
+$$
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+$$
+```
 
 $$
 x = {-b \pm \sqrt{b^2-4ac} \over 2a}
 $$
 
-- Code block with color and line numbers：
-```javascript=16
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
 
-- UML diagrams
-```sequence
-Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!
-Note left of Alice: Alice responds
-Alice->Bob: Where have you been?
+## Diagrammes UML
+##### *`ne fonctionne pas sur Github, une image est tout de même là pour illustrer`*
+
+Certains moteurs de rendu Markdown permettent la conception de diagrammes UML grâce à une séquence spécifiée en Markdown.
 ```
+    ```sequence
+    Alice->Bob: Hello Bob, how are you?
+    Note right of Bob: Bob thinks
+    Bob-->Alice: I am good thanks!
+    Note left of Alice: Alice responds
+    Alice->Bob: Where have you been?
+    ```
+```
+![Diagramme UML généré depuis Markdown](./img/uml.png)
+
+***
+`source:` [Guide Markdown](https://www.markdownguide.org)
