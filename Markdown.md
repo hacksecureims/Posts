@@ -523,7 +523,7 @@ _______________________
 
 Pour créer un lien, entoures le titre du lien dans des crochets (ex: [Google]) et ajoutes directement après le lien entre parenthèses (`[Google](https://google.com)`)
 
-`> Mon site préféré est [SAFIR](http://safir.univ-reims.fr)`
+`Mon site préféré est [SAFIR](http://safir.univ-reims.fr)`
 
 Le rendu ressemble à ceci :
 > Mon site préféré est [SAFIR](http://safir.univ-reims.fr)
@@ -531,88 +531,160 @@ Le rendu ressemble à ceci :
 Tu peux aussi lier un élément de la même page à un lien. 
 Tu dois d'abord créer un identifiant personnalisé sur tes titres. Certaines applications Markdown les ajoute automatiquement.
 
-Pour en ajouter, tu dois simplement ajouter l'identifiant personnalisé après le titre ` ##### First {#first} ` puis y faire référence `[link to first](#first)`
+Pour en ajouter, tu dois simplement ajouter l'identifiant personnalisé après le titre ` ### First {#first} ` puis y faire référence `[link to first](#first)`
 
-##### First
+Le rendu ressemble à ceci :
 
-[link to first](#first)
+> ### First
+>
+> Bla bla bla
+>
+> - [link to first](#first)
 
-[ SUITE A VENIR ]
+## Ajouter des info-bulles
 
+Tu peux aussi ajouter des info-bulles qui apparaîtront en passant sur le lien. Pour ce faire, rajoutes le texte du tooltip après le lien qui se trouve entre les parenthèses
 
+`[SAFIR](http://safir.univ-reims.fr "Le site officiel SAFIR")`
 
+Le rendu ressemble à ceci :
 
-# My first HackMD note (change me!)
+> [SAFIR](http://safir.univ-reims.fr "Le site officiel SAFIR")
 
-###### tags: `Tag(change me!)`
+## URLs et adresses mail
 
-> This note is yours, feel free to play around.  :video_game: 
-> Type on the left :arrow_left: and see the rendered result on the right. :arrow_right: 
+Pour créer un lien à partir d'une URL ou d'une adresse mail, entoures là de chevrons.
 
-## :memo: Where do I start?
+***La majorité des applications Markdown le font nativement, donc pas forcément besoins des chevrons.***
 
-### Step 1: Change the title and add a tag
+```
+<http://safir.univ-reims.fr>
+<contact@safir.univ-reims.fr>
 
-- [x] Create my first HackMD note (this one!)
-- [ ] Change its title
-- [ ] Add a tag
+http://safir.without-chevrons.fr>
+contact@safir.without-chevrons.fr
+```
 
-:rocket: 
+Le rendu ressemble à ceci : 
 
-### Step 2: Write something in Markdown
+> <http://safir.univ-reims.fr> <br>
+> <contact@safir.univ-reims.fr> <br><br>
+> http://safir.without-chevrons.fr <br>
+> contact@safir.without-chevrons.fr
 
-Let's try it out!
-Apply different styling to this paragraph:
-**HackMD gets everyone on the same page with Markdown.** ==Real-time collaborate on any documentation in markdown.== Capture fleeting ideas and formalize tribal knowledge.
+## Formatage des liens
 
-- [x] **Bold**
-- [ ] *Italic*
-- [ ] Super^script^
-- [ ] Sub~script~
-- [ ] ~~Crossed~~
-- [x] ==Highlight==
+Le formatage habituel fonctionne aussi sur les liens.
 
-:::info
-:bulb: **Hint:** You can also apply styling from the toolbar at the top :arrow_upper_left: of the editing area.
+```
+Le site du **[Master RT](https://master-reseaux-telecom-reims.fr/)**.
+Tu peux retrouver ces astuces sur le *[guide Markdown](https://www.markdownguide.org)*.
+Et même faire du [`code`](#code)
+```
 
-![](https://i.imgur.com/Cnle9f9.png)
-:::
+> Le site du **[Master RT](https://master-reseaux-telecom-reims.fr/)**. <br>
+> Tu peux retrouver ces astuces sur le *[guide Markdown](https://www.markdownguide.org)*. <br>
+> Et même faire du [`code`](#code) clickable.
 
-> Drag-n-drop image from your file system to the editor to paste it!
+# Liens par référence
+Les liens par référence sont un style de lien particulier qui simplifie l'affichage et la lecture des liens dans le Markdown. Ils sont construits en deux parties : la partie que tu gardes en ligne avec ton texte et la partie que tu stockes ailleurs dans le fichier pour que le texte reste facile à lire. 
 
-### Step 3: Invite your team to collaborate!
+## Formatage de la première partie du lien
 
-Click on the <i class="fa fa-share-alt"></i> **Sharing** menu :arrow_upper_right: and invite your team to collaborate on this note!
+La première partie du lien se décompose en deux ensembles de crochets. Le premier ensemble contient le texte qui doit être lié. Le second contient le label utilisé pour pointer vers le lien stocké ailleurs dans le document.
 
-![permalink setting demo](https://i.imgur.com/PjUhQBB.gif)
+Il peut y avoir un espace entre ces deux parties. Le deuxième ensemble est insensible à la casse et peut contenir des lettres, des chiffres, des espaces ou des signes de ponctuation. 
 
-- [ ] Register and sign-in to HackMD (to use advanced features :tada: ) 
-- [ ] Set Permalink for this note
-- [ ] Copy and share the link with your team
+```
+[tutoriel][1]
+[tutoriel] [1]
+```
 
-:::info
-:pushpin: Want to learn more? ➜ [HackMD Tutorials](https://hackmd.io/c/tutorials) 
-:::
+## Formatage de la seoncde partie du lien
 
----
+La seconde partie du lieu est formaté avec les attributs suivants : 
 
-## BONUS: More cool ways to HackMD!
+1. Le label
+    - Entre crochets, suivi directement de deux points et d'au moins un espace (ex: `[label]: `).
+2. L'URL
+    - Le lien qui peut être entouré de chevrons.
+3. Le titre optionnel pour le lien
+    - Peut être entouré de simple ou doubles guillemets ou de parenthèses.
 
-- Table
+Les formats suivants sont donc équivalents : 
 
-| Features          | Tutorials               |
-| ----------------- |:----------------------- |
-| GitHub Sync       | [:link:][GitHub-Sync]   |
-| Browser Extension | [:link:][HackMD-it]     |
-| Book Mode         | [:link:][Book-mode]     |
-| Slide Mode        | [:link:][Slide-mode]    | 
-| Share & Publish   | [:link:][Share-Publish] |
+```
+[1]: https://fr.wikipedia.org/wiki/Informatique#Histoire
+[1]: https://fr.wikipedia.org/wiki/Informatique#Histoire "Histoire de l'informatique"
+[1]: https://fr.wikipedia.org/wiki/Informatique#Histoire 'Histoire de l'informatique'
+[1]: https://fr.wikipedia.org/wiki/Informatique#Histoire (Histoire de l'informatique)
+[1]: <https://fr.wikipedia.org/wiki/Informatique#Histoire> "Histoire de l'informatique"
+[1]: <https://fr.wikipedia.org/wiki/Informatique#Histoire> 'Histoire de l'informatique'
+[1]: <https://fr.wikipedia.org/wiki/Informatique#Histoire> (Histoire de l'informatique)
+```
 
-[GitHub-Sync]: https://hackmd.io/c/tutorials/%2Fs%2Flink-with-github
-[HackMD-it]: https://hackmd.io/c/tutorials/%2Fs%2Fhackmd-it
-[Book-mode]: https://hackmd.io/c/tutorials/%2Fs%2Fhow-to-create-book
-[Slide-mode]: https://hackmd.io/c/tutorials/%2Fs%2Fhow-to-create-slide-deck
-[Share-Publish]: https://hackmd.io/c/tutorials/%2Fs%2Fhow-to-publish-note
+Tu peux placer ces lignes n'importe où dans ton document Markdown. Certains le préfère directement après le paragraphe où il est appelé, d'autres le préfèrent à la toute fin du document.
+
+## Les deux parties ensemble
+
+Disons que vous voulez mettre une URL avec la méthode basique dans un paragraphe : 
+
+```
+Les dieux de ce panthéon existent du fait du grand dieu non évoqué, qu'on peut assimiler au Destin. Le panthéon nordique se divise d'abord en deux groupes de divinités : les Ases et les [Vanes](https://fr.wikipedia.org/wiki/Vanes "Page Wikipedia sur les Vanes"). La guerre entre les Ases et les Vanes se termine par l'union des deux groupes de dieux.
+```
+
+Bien qu'en tant que lecteur on puisse clicker sur le lien comme d'habitude, le texte brut est un peu compliqué à lire étant donné les différentes parties. Mais si on utilise les liens par référence, voici ce que cela donnerait : 
+
+```
+Les dieux de ce panthéon existent du fait du grand dieu non évoqué, qu'on peut assimiler au Destin. Le panthéon nordique se divise d'abord en deux groupes de divinités : les Ases et les [Vanes][1]. La guerre entre les Ases et les Vanes se termine par l'union des deux groupes de dieux.
+
+[1]: <https://fr.wikipedia.org/wiki/Vanes> "Vanes"
+```
+
+Dans les deux exemples ci dessus, le rendu est le même : 
+> Les dieux de ce panthéon existent du fait du grand dieu non évoqué, qu'on peut assimiler au Destin. Le panthéon nordique se divise d'abord en deux groupes de divinités : les Ases et les [Vanes][1]. La guerre entre les Ases et les Vanes se termine par l'union des deux groupes de dieux.
+>
+> [1]: <https://fr.wikipedia.org/wiki/Vanes> "Vanes"
+
+et l'HTML généré serait également le même :
+
+`<a href="https://en.wikipedia.org/wiki/Hobbit#Lifestyle" title="Hobbit lifestyles">hobbit-hole</a>`
+
+## Meilleures pratiques à propos des liens
+
+Par soucis de compatibilité, il vaut mieux encoder les caractères spéciaux dans les URLs, comme les espaces qui se transforment en `%20`.
+
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`[link](https://www.exemple.fr/un%20exemple/)`|`[link](https://www.exemple.fr/un exemple/`|
+
+# Images
+
+Pour ajouter une image, il faut ajouter un point d'exclamation (`!`) suivi du texte alternatif entre crochets et du chemin ou du lien vers l'image entre parenthèses. On peut également ajouter un titre optionnel entre guillemets après le lien, toujours dans les parenthèses.
+
+`![Magnifique vue d'une forêt de sapins enneigés](./img/spruce_snow.jpg "Forêt de sapins enneigés)`
+
+Ce qui ressemble à ceci :
+
+***
+
+![Forêt de sapins enneigés](./img/spruce_snow.jpg "Forêt de sapins enneigés")
+
+***
+
+# Image avec lien
+
+Pour ajouter un lien dans une image, entoures la balise pour l'image dans des crochets et ajoutes ensuite le lien entre parenthèses. 
+
+`[!Une plaine](./img/plain.jpg "Une plaine qui redirige secrètement vers le discord")](https://discord.gg/T2vM2Tu)`
+
+Ce qui ressenble à 
+
+***
+
+[![Une plaine](./img/plain.jpg "Une plaine qui redirige secrètement vers le discord")](https://discord.gg/T2vM2Tu)
+
+***
 
 - LaTeX for formulas
 
@@ -634,15 +706,3 @@ Bob-->Alice: I am good thanks!
 Note left of Alice: Alice responds
 Alice->Bob: Where have you been?
 ```
-- Auto-generated Table of Content
-[ToC]
-
-> Leave in-line comments! [color=#3b75c6]
-
-- Embed YouTube Videos
-
-{%youtube PJuNmlE74BQ %}
-
-> Put your cursor right behind an empty bracket {} :arrow_left: and see all your choices.
-
-- And MORE ➜ [HackMD Tutorials](https://hackmd.io/c/tutorials)
