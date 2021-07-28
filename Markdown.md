@@ -794,7 +794,7 @@ x = {-b \pm \sqrt{b^2-4ac} \over 2a}
 $$
 ```
 
-![formule LaTeX](./img/formule.png "formule latex")
+![formule LaTeX](./img/formule.PNG "formule latex")
 
 ## Diagrammes UML
 ##### *`ne fonctionne pas sur Github, une image est tout de même là pour illustrer`*
@@ -809,7 +809,7 @@ Certains moteurs de rendu Markdown permettent la conception de diagrammes UML gr
     Alice->Bob: Where have you been?
     ```
 ```
-![Diagramme UML généré depuis Markdown](./img/uml.png "diagramme uml")
+![Diagramme UML généré depuis Markdown](./img/uml.PNG "diagramme uml")
 
 ***
 `source:` [Guide Markdown](https://www.markdownguide.org)
