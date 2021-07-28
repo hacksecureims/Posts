@@ -742,33 +742,43 @@ Ce qui donnera :
 >       - sous liste
 > </details>
 
-## Notes de bas de page
+## Tableau
+
+Pour créer un tableau, utilises 3 ou plus de tirets (`---`) pour créer les entêtes des colonnes et les pipes (`\`) pour séparer les colonnes. Pour des raisons de compatibilité, il vaut mieux placer un pipe également à la fin de chaque ligne.
+
+Tu peux également formater le texte dans les tableaux à l'aide des emphases vus précédemment comme les étoiles pour rendre gras ou italique (`**gras**`, `_italique_`).
+
+La largeur des cellules peuvent varier, le tableau aura le même rendu.
 
 ```
-Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+| Syntaxe     | Description |
+| ----------- | ----------- |
+| En-tête     | **Titre**   |
+| Paragraphe  | Texte       |
 
-[^1]: This is the first footnote.
-
-[^bignote]: Here's one with multiple paragraphs and code.
-
-    Indent paragraphs to include them in the footnote.
-
-    `{ my code }`
-
-    Add as many paragraphs as you like.
+| Syntax| Description |
+| --- | ----------- |
+|En-tête| **Titre**|
+|Paragraphe | Texte       |
 ```
 
-Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+Ce qui donnera : 
 
-[^1]: This is the first footnote.
+***
 
-[^bignote]: Here's one with multiple paragraphs and code.
+| Syntaxe     | Description |
+| ----------- | ----------- |
+| En-tête     | Titre       |
+| Paragraphe  | Texte       |
 
-    Indent paragraphs to include them in the footnote.
+| Syntax| Description |
+| --- | ----------- |
+|En-tête| Titre|
+|Paragraphe | Texte       |
 
-    `{ my code }`
+***
 
-    Add as many paragraphs as you like.
+Tu peux aussi aligner les éléments du tableau en ajoutant deux points (`:`) à certains endroits. Il s'appliquera alors à **toute la colonne**.
 
 ## LaTeX
 
