@@ -531,11 +531,9 @@ Le rendu ressemble à ceci :
 Tu peux aussi lier un élément de la même page à un lien. 
 Tu dois d'abord créer un identifiant personnalisé sur tes titres. Certaines applications Markdown les ajoute automatiquement.
 
-Pour en ajouter, tu dois simplement ajouter l'identifiant personnalisé après le titre comme ci dessous : 
+Pour en ajouter, tu dois simplement ajouter l'identifiant personnalisé après le titre ` ##### First {#first} ` puis y faire référence `[link to first](#first)`
 
-` ##### First {#first} `
-
-##### First {#first}
+##### First
 
 [link to first](#first)
 
