@@ -1,10 +1,10 @@
 # Écrire en Markdown
 
 # Sommaire
-
-- 
-- 
-- 
+<details>
+    <summary>Clic pour afficher</summary>
+    TODO
+</details>
 
 # Introduction
 
@@ -16,7 +16,7 @@ Le Markdown est principalement utilisé pour rédiger des commentaires et des do
 
 # Les titres
 
-Pour créer un titre, ajoutes un dièse (#) devant un mot ou une phrase. Le nombre de dièse que tu utilises doit correspondre au niveau de l'en-tête. Par exemple, pour créer un titre de niveau trois (`<h3>` en HTML), utilises trois dièses (par exemple `### Mon titre`).
+Pour créer un titre, ajoutes un dièse (#) devant un mot ou une phrase. Le nombre de dièse que tu utilises doit correspondre au niveau de l'en-tête. Par exemple, pour créer un titre de niveau . (`<h3>` en HTML), utilises 3 dièses (par exemple `### Mon titre`).
 
 |Markdown|HTML|Rendu|
 |---|---|---|
@@ -36,7 +36,7 @@ Pour créer un titre, ajoutes un dièse (#) devant un mot ou une phrase. Le nomb
 
 ## Meilleures pratiques à propos des titres
 
-Les interpréteurs Markdowns ne sont pas d'accords sur la façon de prendre en charge les espaces manquants entre les dièses et les titres ou autres. Pour une meilleur compatibilité, mets toujours un espace entre les caractères dièses et les titres.
+Les interpréteurs Markdowns ne sont pas daccords sur la façon de prendre en charge les espaces manquants entre les dièses et les titres ou autres. Pour une meilleur compatibilité, mets toujours un espace entre les caractères dièses et les titres.
 
 |✔️ À faire|❌ À ne pas faire|
 |---|---|
@@ -50,7 +50,7 @@ De la même façon qu'il est mieux d'ajouter des lignes vides avant et après le
 
 # Les paragraphes
 
-Pour créer des paragraphes, séparez votre texte par des lignes vides.
+Pour créer des paragraphes, sépares ton texte par des lignes vides.
 
 ## Meilleures pratiques à propos des paragraphes
 
@@ -62,7 +62,7 @@ Contrairement aux paragraphes dans les listes, il ne faut pas indenter les parag
 
 # Les sauts de ligne
 
-Pour créer un saut de ligne (`<br>`), terminez une ligne par deux espaces ou plus, puis tapez retour.
+Pour créer un saut de ligne (`<br>`), termines une ligne par deux espaces ou plus, puis tapes la touche entrée.
 
 |Markdown|HTML|Rendu|
 |---|---|---|
@@ -70,7 +70,7 @@ Pour créer un saut de ligne (`<br>`), terminez une ligne par deux espaces ou pl
 
 ## Meilleures pratiques à propos des sauts de lignes
 
-Vous pouvez donc utiliser deux espaces ou plus (appelés "espaces blancs de fin de ligne") pour les sauts de ligne dans presque toutes les applications Markdown mais cette pratique est controversée. Il est difficile de voir les espaces en fin de ligne dans un éditeur et de nombreuses personnes mettent accidentellement ou intentionnellement deux espaces après chaque phrase. Il est donc préférable d'utiliser autre chose. Si l'application Markdown prend en charge l'HTML, vous pouvez utiliser le balise HTML `<br>`.<br><br>
+Tu peux donc utiliser deux espaces ou plus (appelés "espaces blancs de fin de ligne") pour les sauts de ligne dans presque toutes les applications Markdown mais cette pratique est controversée. Il est difficile de voir les espaces en fin de ligne dans un éditeur et de nombreuses personnes mettent accidentellement ou intentionnellement deux espaces après chaque phrase. Il est donc préférable d'utiliser autre chose. Si l'application Markdown prend en charge l'HTML, tu peux utiliser la balise HTML `<br>`.<br><br>
 Pour des raisons de compatibilité, il vaut mieux utiliser cette balise à la fin de la ligne.<br><br>
 Il y a d'autres options mais non recommandées :<br>Certains langages dérivés permettent de taper une barre oblique inversée à la fin de la ligne (`\`) et d'autres permettent de taper `return` pour un créer un saut de ligne, mais encore une fois, il ne vaut mieux pas les utiliser pour des raisons de compatibilités.
 
@@ -80,11 +80,11 @@ Il y a d'autres options mais non recommandées :<br>Certains langages dérivés 
 
 # L'accentuation
 
-Vous pouvez ajouter de l'emphase (accentuation) pour mettre votre texte en gras ou en italique.
+Tu peux ajouter de l'emphase (accentuation) pour mettre ton texte en gras ou en italique.
 
 ## Texte en gras
 
-Pour mettre votre texte en gras, ajouter deux astérisques (`**`) ou deux tirets bas (`__`) avant et après votre mot ou votre phrase. Pour mettre en gras seulement le milieu d'un mot, ajoutez deux astérisques sans espaces autour des lettres.
+Pour mettre ton texte en gras, ajoutes deux astérisques (`**`) ou deux tirets bas (`__`) avant et après ton mot ou ta phrase. Pour mettre en gras seulement le milieu d'un mot, ajoutes deux astérisques sans espaces autour des lettres.
 
 |Markdown|HTML|Rendu|
 |---|---|---|
@@ -100,7 +100,7 @@ Pour mettre votre texte en gras, ajouter deux astérisques (`**`) ou deux tirets
 
 ## Texte en italique
 
-Pour mettre votre texte en italique, ajouter un astérisque(`*`) ou un tiret bas (`_`) avant et après votre mot ou votre phrase. Pour mettre en italique seulement le milieu d'un mot, ajoutez un astérisque sans espaces autour des lettres.
+Pour mettre ton texte en italique, ajoutes un astérisque (`*`) ou un tiret bas (`_`) avant et après ton mot ou ta phrase. Pour mettre en italique seulement le milieu d'un mot, ajoutes un astérisque sans espaces autour des lettres.
 
 |Markdown|HTML|Rendu|
 |---|---|---|
@@ -116,7 +116,7 @@ Pour mettre votre texte en italique, ajouter un astérisque(`*`) ou un tiret bas
 
 ## Texte en gras ET en italique
 
-Pour mettre votre texte en gras et en italique, ajouter trois astérisques (`***`) ou trois tirets bas (`___`) avant et après votre mot ou votre phrase. Pour mettre en gras et en italique seulement le milieu d'un mot, ajoutez trois astérisques sans espaces autour des lettres.
+Pour mettre ton texte en gras et en italique, ajoutes trois astérisques (`***`) ou trois tirets bas (`___`) avant et après ton mot ou ta phrase. Pour mettre en gras et en italique seulement le milieu d'un mot, ajoutes trois astérisques sans espaces autour des lettres.
 
 |Markdown|HTML|Rendu|
 |---|---|---|
@@ -160,7 +160,7 @@ donnera :
 
 ## Citation imbriquée
 
-Les blocs de citations peuvent être imbriqués. Ajouter deux chevrons (`>>`) devant la citation que vous voulez imbriquer.
+Les blocs de citations peuvent être imbriqués. Ajoutes deux chevrons (`>>`) devant la citation que tu veux imbriquer.
 
 ```
 > Le principe de l'évolution est beaucoup plus rapide en informatique que chez le bipède.
@@ -197,7 +197,7 @@ donnera :
 
 ## Meilleures pratiques à propos des citations
 
-Par soucis de compatibilité, ajoutez toujours des lignes vides avant et après les citations.
+Par soucis de compatibilité, ajoutes toujours des lignes vides avant et après les citations.
 
 |✔️ À faire|❌ À ne pas faire|
 |---|---|
@@ -205,7 +205,7 @@ Par soucis de compatibilité, ajoutez toujours des lignes vides avant et après 
 
 # Les listes
 
-Vous pouvez organiser les éléments en listes ordonnées et non ordonnées.
+Tu peux organiser les éléments en listes ordonnées et non ordonnées.
 
 ## Liste ordonnée
 
@@ -226,7 +226,7 @@ Les listes ordonnées commencent par des nombres suivis d'un point. Les nombres 
 
 ## Liste non ordonnée
 
-Les listes non ordonnées commencent soit par des tirets (`-`), soit par des astérisques (`*`), soit par des plus (`+`) devant les lignes. Vous pouvez indenter un ou plusieurs items pour créer une liste imbriquée.
+Les listes non ordonnées commencent soit par des tirets (`-`), soit par des astérisques (`*`), soit par des plus (`+`) devant les lignes. Tu peux indenter un ou plusieurs items pour créer une liste imbriquée.
 
 |Markdown|HTML|Rendu|
 |---|---|---|
@@ -237,7 +237,7 @@ Les listes non ordonnées commencent soit par des tirets (`-`), soit par des ast
 
 ## Meilleures pratiques à propos des listes non ordonnées
 
-Encore une fois, les applications Markdown ne gèrent pas toutes de la même façon les différents délimiteurs dans la même liste. Pour une meilleure compatibilité, ne mélangez pas les délimiteurs dans la même liste. Choisissez en un et gardez le.
+Encore une fois, les applications Markdown ne gèrent pas toutes de la même façon les différents délimiteurs dans la même liste. Pour une meilleure compatibilité, ne mélange pas les délimiteurs dans la même liste. Choisis en un et gardes le.
 
 |✔️ À faire|❌ À ne pas faire|
 |---|---|
@@ -258,16 +258,12 @@ Pour ajouter un élément à une liste tout en préservant la continuité de la 
 * Troisième ligne
 ```
 
-Le rendu ressemble à ceci :
-***
-
 * Première ligne
 * Deuxième ligne
 
     Ajouter un paragraphe
 
 * Troisième ligne
-***
 
 ## Ajouter une citation
 
@@ -280,16 +276,12 @@ Le rendu ressemble à ceci :
 * Troisième ligne
 ```
 
-Le rendu ressemble à ceci :
-***
-
 * Première ligne
 * Deuxième ligne
 
     > Ajouter un paragraphe
 
 * Troisième ligne
-***
 
 ## Ajouter un bloc de code
 
@@ -305,9 +297,6 @@ Le rendu ressemble à ceci :
 3. Troisième ligne
 ```
 
-Le rendu ressemble à ceci :
-***
-
 1. Ouvres le fichier .html.
 2. Trouves ce bloc de code à la ligne 21: 
 
@@ -317,8 +306,6 @@ Le rendu ressemble à ceci :
             </head>
 
 3. Modifies en fonction de ton titre.
-
-***
 
 ## Ajouter une image
 
@@ -331,18 +318,12 @@ Le rendu ressemble à ceci :
 3. Utiliser le logo
 ```
 
-Le rendu ressemble à ceci :
-
-***
-
 1. Trouver un logo
 2. Voici le logo
 
     ![Le logo SAFIR](./img/logo_safir.ico)
 
 3. Utiliser le logo
-
-***
 
 ## Ajouter une liste
 
@@ -356,10 +337,6 @@ Le rendu ressemble à ceci :
 3. Utiliser le logo
 ```
 
-Le rendu ressemble à ceci :
-
-***
-
 1. Trouver un logo
 2. Voici le logo
 
@@ -367,8 +344,6 @@ Le rendu ressemble à ceci :
     - ligne indentée
 
 3. Utiliser le logo
-
-***
 
 # Code
 
@@ -404,10 +379,7 @@ Pour créer un bloc de code, il y a deux façons de faire. Soit tu indentes chaq
     </html>
     ```
 ```
-
-Le rendu ressemble à ceci :
-
-***
+donnera : 
 
     <html>
         <head>
@@ -420,8 +392,6 @@ Le rendu ressemble à ceci :
     </head>
 </html>
 ```
-
-***
 
 Comme tu l'as vu, tu peux ajouter le langage souhaité après les 3 premiers backticks pour avoir une coloration syntaxique. Cela fonctionne uniquement dans les blocs de code compris entre les 3 backticks.
 
@@ -460,9 +430,7 @@ Comme tu l'as vu, tu peux ajouter le langage souhaité après les 3 premiers bac
     ```
 ```
 
-Le rendu ressemble à ceci :
-
-***
+donnera :
 
 ```CSS
 .btn {
@@ -492,8 +460,6 @@ export class AccountService {
 }
 ```
 
-***
-
 Tu peux trouver dans la documentation de Markdown les langages supportés.
 
 # Séparation horizontale
@@ -502,18 +468,17 @@ Pour créer une séparation horizontale, utilises soit 3 astérisques (`***`), 3
 
 ```
 ***
-
 ---
-
 _____________
 
-Le rendu ressemble à ceci :
-
 ```
+donnera :
 
 ***
 ---
 _______________________
+
+<br>
 
 |✔️ À faire|❌ À ne pas faire|
 |---|---|
@@ -525,7 +490,7 @@ Pour créer un lien, entoures le titre du lien dans des crochets (ex: [Google]) 
 
 `Mon site préféré est [SAFIR](http://safir.univ-reims.fr)`
 
-Le rendu ressemble à ceci :
+donnera : 
 > Mon site préféré est [SAFIR](http://safir.univ-reims.fr)
 
 Tu peux aussi lier un élément de la même page à un lien. 
@@ -533,7 +498,7 @@ Tu dois d'abord créer un identifiant personnalisé sur tes titres. Certaines ap
 
 Pour en ajouter, tu dois simplement ajouter l'identifiant personnalisé après le titre ` ### First {#first} ` puis y faire référence `[link to first](#first)`
 
-Le rendu ressemble à ceci :
+donnera : 
 
 > ### First
 >
@@ -547,7 +512,7 @@ Tu peux aussi ajouter des info-bulles qui apparaîtront en passant sur le lien. 
 
 `[SAFIR](http://safir.univ-reims.fr "Le site officiel SAFIR")`
 
-Le rendu ressemble à ceci :
+donnera : 
 
 > [SAFIR](http://safir.univ-reims.fr "Le site officiel SAFIR")
 
@@ -565,7 +530,7 @@ http://safir.without-chevrons.fr>
 contact@safir.without-chevrons.fr
 ```
 
-Le rendu ressemble à ceci : 
+donnera : 
 
 > <http://safir.univ-reims.fr> <br>
 > <contact@safir.univ-reims.fr> <br><br>
@@ -664,13 +629,9 @@ Pour ajouter une image, il faut ajouter un point d'exclamation (`!`) suivi du te
 
 `![Magnifique vue d'une forêt de sapins enneigés](./img/spruce_snow.jpg "Forêt de sapins enneigés)`
 
-Ce qui ressemble à ceci :
-
-***
+donnera :
 
 ![Forêt de sapins enneigés](./img/spruce_snow.jpg "Forêt de sapins enneigés")
-
-***
 
 # Image avec lien
 
@@ -678,13 +639,10 @@ Pour ajouter un lien dans une image, entoures la balise pour l'image dans des cr
 
 `[!Une plaine](./img/plain.jpg "Click me!")](https://discord.gg/T2vM2Tu)`
 
-Ce qui ressenble à 
+donnera : 
 
-***
 
 [![Une plaine](./img/plain.jpg "Click me!")](https://discord.gg/T2vM2Tu)
-
-***
 
 # Échappement de caractères
 
@@ -692,7 +650,7 @@ Comme dans beaucoup de situations, tu peux échapper certains caractères pour q
 
 `\* Sans le backslash, cette phrase serait le début d'une liste`
 
-ce qui donne 
+donnera : 
 
 > \* Sans le backslash, cette phrase serait le début d'une liste
 
@@ -729,7 +687,7 @@ Pour se faire, utilises la balise HTML `<details>` et `<summary>`.
 > </details>
 ```
 
-Ce qui donnera : 
+donnera : 
 
 > ### Exemple
 > <details>
@@ -762,9 +720,7 @@ La largeur des cellules peuvent varier, le tableau aura le même rendu.
 |Paragraphe | Texte       |
 ```
 
-Ce qui donnera : 
-
-***
+donnera : 
 
 | _Syntaxe_   | Description |
 | ----------- | ----------- |
@@ -775,8 +731,6 @@ Ce qui donnera :
 | --- | ----------- |
 |En-tête| **Titre**|
 |Paragraphe | Texte       |
-
-***
 
 Tu peux aussi aligner les éléments du tableau en ajoutant deux points (`:`) à certains endroits. Il s'appliquera alors à **toute la colonne**.
 
@@ -805,8 +759,6 @@ Tu peux aussi créer des listes interactives grâce à des checkboxs. Ces checkb
 - [x] Sélectionné par défaut
 - [ ] Pas sélectionné
 - [ ] Finir ce tutoriel
-
-***
 
 ## Émoji
 
