@@ -334,7 +334,7 @@ Le rendu ressemble à ceci :
 1. Trouver un logo
 2. Voici le logo
 
-    ![Le logo SAFIR](./img/logo_safir.png =50x)
+    ![Le logo SAFIR](./img/logo_safir.png){ height50% }
 
 3. Utiliser le logo
 [ SUITE A VENIR ]
