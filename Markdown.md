@@ -543,7 +543,7 @@ Le rendu ressemble à ceci :
 
 ## Ajouter des info-bulles
 
-Tu peux aussi ajouter des info-bulles qui apparaîtront en passant sur le lien. Pour ce faire, rajoutes le texte du tooltip après le lien qui se trouve entre les parenthèses
+Tu peux aussi ajouter des info-bulles qui apparaîtront en passant sur le lien. Pour se faire, rajoutes le texte du tooltip après le lien qui se trouve entre les parenthèses
 
 `[SAFIR](http://safir.univ-reims.fr "Le site officiel SAFIR")`
 
@@ -676,15 +676,101 @@ Ce qui ressemble à ceci :
 
 Pour ajouter un lien dans une image, entoures la balise pour l'image dans des crochets et ajoutes ensuite le lien entre parenthèses. 
 
-`[!Une plaine](./img/plain.jpg "Une plaine qui redirige secrètement vers le discord")](https://discord.gg/T2vM2Tu)`
+`[!Une plaine](./img/plain.jpg "Click me!")](https://discord.gg/T2vM2Tu)`
 
 Ce qui ressenble à 
 
 ***
 
-[![Une plaine](./img/plain.jpg "Une plaine qui redirige secrètement vers le discord")](https://discord.gg/T2vM2Tu)
+[![Une plaine](./img/plain.jpg "Click me!")](https://discord.gg/T2vM2Tu)
 
 ***
+
+# Échappement de caractères
+
+Comme dans beaucoup de situations, tu peux échapper certains caractères pour qu'ils n'aient pas d'influence dans le Markdown. Pour se faire, ajoutes un backslash (`\`) devant le caractère.
+
+`\* Sans le backslash, cette phrase serait le début d'une liste`
+
+ce qui donne 
+
+> \* Sans le backslash, cette phrase serait le début d'une liste
+
+Voici une liste des caractères que tu peux échapper :
+
+``\\ \` \* \_ \{ \} \[ \] \< \> \( \) \# \+ \- \. \! \|``
+
+# HTML
+Certaines applications Markdown permettent l'utilisation des balises HTML. C'est utile pour certaines personnes qui préfèrent la syntaxe HTML pour les images. Les balises HTML sont aussi utiles pour changer la couleur du texte ou changer la taille d'une image. 
+
+Par contre, pour des raisons de sécurité, toutes les applications Markdown ne le supportent pas. Si vous souhaitez tout de même utiliser les balises HTML, il faut séparer les blocs comme `<div>` ou `<table>` du contenu autour par des lignes vides. Il vaut mieux ne pas indenter ces balises car elles pourraient interférer avec le formatage Markdown. 
+
+De plus, il n'est pas possible d'utiliser du Markdown à l'intérieur des balises HTML<br>
+`Par exemple, <p>italique et **gras**</p> ne fonctionnera pas`.
+
+# Syntaxe étendue
+
+Les prochaines sections peuvent ne pas fonctionner sur toutes les applications Markdown. 
+
+## Section dépliable
+
+Pour se faire, utilises la balise HTML `<details>` et `<summary>`.
+
+```
+> ### Exemple
+> <details>
+>   <summary>Clic pour déplier</summary>
+>   
+>   #### Un sous titre
+>   1. Une liste
+>   2. **La suite**
+>       - avec une
+>       - sous liste
+> </details>
+```
+
+Ce qui donnera : 
+
+> ### Exemple
+> <details>
+>   <summary>Clic pour déplier</summary>
+>   
+>   #### Un sous titre
+>   1. Une liste
+>   2. **La suite**
+>       - avec une
+>       - sous liste
+> </details>
+
+## Notes de bas de page
+
+```
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
+```
+
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
+
+## LaTeX
 
 - LaTeX for formulas
 
