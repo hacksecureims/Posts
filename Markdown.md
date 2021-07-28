@@ -603,7 +603,7 @@ Bien qu'en tant que lecteur on puisse clicker sur le lien comme d'habitude, le t
 ```
 Les dieux de ce panthéon existent du fait du grand dieu non évoqué, qu'on peut assimiler au Destin. Le panthéon nordique se divise d'abord en deux groupes de divinités : les Ases et les [Vanes][1]. La guerre entre les Ases et les Vanes se termine par l'union des deux groupes de dieux.
 
-[1]: <https://fr.wikipedia.org/wiki/Vanes> "Vanes"
+[1]: <https://fr.wikipedia.org/wiki/Vanes> "Les vanes"
 ```
 
 Dans les deux exemples ci dessus, le rendu est le même : 
