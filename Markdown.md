@@ -627,7 +627,7 @@ Par soucis de compatibilité, il vaut mieux encoder les caractères spéciaux da
 
 Pour ajouter une image, il faut ajouter un point d'exclamation (`!`) suivi du texte alternatif entre crochets et du chemin ou du lien vers l'image entre parenthèses. On peut également ajouter un titre optionnel entre guillemets après le lien, toujours dans les parenthèses.
 
-`![Magnifique vue d'une forêt de sapins enneigés](./img/spruce_snow.jpg "Forêt de sapins enneigés)`
+`![Magnifique vue d'une forêt de sapins enneigés](./img/spruce_snow.jpg "Forêt de sapins enneigés")`
 
 donnera :
 
@@ -794,7 +794,7 @@ x = {-b \pm \sqrt{b^2-4ac} \over 2a}
 $$
 ```
 
-![formule LaTeX](./img/formule.png)
+![formule LaTeX](./img/formule.png "formule latex")
 
 ## Diagrammes UML
 ##### *`ne fonctionne pas sur Github, une image est tout de même là pour illustrer`*
@@ -809,7 +809,7 @@ Certains moteurs de rendu Markdown permettent la conception de diagrammes UML gr
     Alice->Bob: Where have you been?
     ```
 ```
-![Diagramme UML généré depuis Markdown](./img/uml.png)
+![Diagramme UML généré depuis Markdown](./img/uml.png "diagramme uml")
 
 ***
 `source:` [Guide Markdown](https://www.markdownguide.org)
