@@ -18,35 +18,35 @@ Le Markdown est principalement utilisé pour rédiger des commentaires et des do
 
 Pour créer un titre, ajoutes un dièse (#) devant un mot ou une phrase. Le nombre de dièse que tu utilises doit correspondre au niveau de l'en-tête. Par exemple, pour créer un titre de niveau . (`<h3>` en HTML), utilises 3 dièses (par exemple `### Mon titre`).
 
-~~Markdown~~HTML~~Rendu~~
-~~---~~---~~---~~
-~~# Titre niveau 1~~`<h1>Titre niveau 1</h1>`~~<h1>Titre niveau 1</h1>~~
-~~# Titre niveau 2~~`<h2>Titre niveau 2</h2>`~~<h2>Titre niveau 2</h2>~~
-~~# Titre niveau 3~~`<h3>Titre niveau 3</h3>`~~<h3>Titre niveau 3</h3>~~
-~~# Titre niveau 4~~`<h4>Titre niveau 4</h4>`~~<h4>Titre niveau 4</h4>~~
-~~# Titre niveau 5~~`<h5>Titre niveau 5</h5>`~~<h5>Titre niveau 5</h5>~~
-~~# Titre niveau 6~~`<h6>Titre niveau 6</h6>`~~<h6>Titre niveau 6</h6>~~
+|Markdown|HTML|Rendu|
+|---|---|---|
+|# Titre niveau 1|`<h1>Titre niveau 1</h1>`|<h1>Titre niveau 1</h1>|
+|# Titre niveau 2|`<h2>Titre niveau 2</h2>`|<h2>Titre niveau 2</h2>|
+|# Titre niveau 3|`<h3>Titre niveau 3</h3>`|<h3>Titre niveau 3</h3>|
+|# Titre niveau 4|`<h4>Titre niveau 4</h4>`|<h4>Titre niveau 4</h4>|
+|# Titre niveau 5|`<h5>Titre niveau 5</h5>`|<h5>Titre niveau 5</h5>|
+|# Titre niveau 6|`<h6>Titre niveau 6</h6>`|<h6>Titre niveau 6</h6>|
 
 ## Syntaxe alternative
 
-~~Markdown~~HTML~~Rendu~~
-~~---~~---~~---~~
-~~Titre niveau 1<br>==========~~`<h1>Titre niveau 1</h1>`~~<h1>Titre niveau 1</h1>~~
-~~Titre niveau 2<br>-----------------~~`<h2>Titre niveau 2</h2>`~~<h2>Titre niveau 2</h2>~~
+|Markdown|HTML|Rendu|
+|---|---|---|
+|Titre niveau 1<br>==========|`<h1>Titre niveau 1</h1>`|<h1>Titre niveau 1</h1>|
+|Titre niveau 2<br>-----------------|`<h2>Titre niveau 2</h2>`|<h2>Titre niveau 2</h2>|
 
 ## Meilleures pratiques à propos des titres
 
 Les interpréteurs Markdowns ne sont pas daccords sur la façon de prendre en charge les espaces manquants entre les dièses et les titres ou autres. Pour une meilleur compatibilité, mets toujours un espace entre les caractères dièses et les titres.
 
-~~✔️ À faire~~❌ À ne pas faire~~
-~~---~~---~~
-~~# Voici un titre~~#Voici un titre~~
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|# Voici un titre|#Voici un titre|
 
 De la même façon qu'il est mieux d'ajouter des lignes vides avant et après les titres pour une meilleure compatibilité.
 
-~~✔️ À faire~~❌ À ne pas faire~~
-~~---~~---~~
-~~Une ligne vide avant...<br><br># Voici un titre<br><br>...et une après.~~Sans les lignes vides<br>#Voici un titre<br>ça pourrait ne pas sembler bon.~~
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|Une ligne vide avant...<br><br># Voici un titre<br><br>...et une après.|Sans les lignes vides<br>#Voici un titre<br>ça pourrait ne pas sembler bon.|
 
 # Les paragraphes
 
@@ -56,17 +56,17 @@ Pour créer des paragraphes, sépares ton texte par des lignes vides.
 
 Contrairement aux paragraphes dans les listes, il ne faut pas indenter les paragraphes avec des espaces/tabulations.
 
-~~✔️ À faire~~❌ À ne pas faire~~
-~~---~~---~~
-~~<p>Ne mettez pas de tabulations ou d'espaces.</p><p>Gardez les lignes alignées à gauche comme ça.</p>~~<p>&nbsp;&nbsp;&nbsp;&nbsp;Cela peut entraîner des problèmes de formatage inattendus.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;N'ajoutez pas de tabulations ou d'espaces devant les paragraphes.</p>~~
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|<p>Ne mettez pas de tabulations ou d'espaces.</p><p>Gardez les lignes alignées à gauche comme ça.</p>|<p>&nbsp;&nbsp;&nbsp;&nbsp;Cela peut entraîner des problèmes de formatage inattendus.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;N'ajoutez pas de tabulations ou d'espaces devant les paragraphes.</p>|
 
 # Les sauts de ligne
 
 Pour créer un saut de ligne (`<br>`), termines une ligne par deux espaces ou plus, puis tapes la touche entrée.
 
-~~Markdown~~HTML~~Rendu~~
-~~---~~---~~---~~
-~~Je suis la première ligne.<br>Je suis la deuxième ligne. ~~`<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>`~~<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>~~
+|Markdown|HTML|Rendu|
+|---|---|---|
+|Je suis la première ligne.<br>Je suis la deuxième ligne. |`<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>`|<p>Je suis la première ligne<br><p>Je suis la deuxième ligne</p>|
 
 ## Meilleures pratiques à propos des sauts de lignes
 
@@ -74,9 +74,9 @@ Tu peux donc utiliser deux espaces ou plus (appelés "espaces blancs de fin de l
 Pour des raisons de compatibilité, il vaut mieux utiliser cette balise à la fin de la ligne.<br><br>
 Il y a d'autres options mais non recommandées :<br>Certains langages dérivés permettent de taper une barre oblique inversée à la fin de la ligne (`\`) et d'autres permettent de taper `return` pour un créer un saut de ligne, mais encore une fois, il ne vaut mieux pas les utiliser pour des raisons de compatibilités.
 
-~~✔️ À faire~~❌ À ne pas faire~~
-~~---~~---~~
-~~First line with the HTML tag after.<br>And the next line.~~First line with a backslash after. \ And the next line.~~
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|First line with the HTML tag after.<br>And the next line.|First line with a backslash after. \ And the next line.|
 
 # L'accentuation
 
@@ -86,51 +86,51 @@ Tu peux ajouter de l'emphase (accentuation) pour mettre ton texte en gras ou en 
 
 Pour mettre ton texte en gras, ajoutes deux astérisques (`**`) ou deux tirets bas (`__`) avant et après ton mot ou ta phrase. Pour mettre en gras seulement le milieu d'un mot, ajoutes deux astérisques sans espaces autour des lettres.
 
-~~Markdown~~HTML~~Rendu~~
-~~---~~---~~---~~
-~~`Texte en **gras**`~~`Texte en <strong>gras</strong>`~~Texte en **gras**~~
-~~`Texte en __gras__`~~`Texte en <strong>gras</strong>`~~Texte en __gras__~~
-~~`Texte**en**gras`~~`Texte<strong>en</strong>gras`~~Texte**en**gras~~
+|Markdown|HTML|Rendu|
+|---|---|---|
+|`Texte en **gras**`|`Texte en <strong>gras</strong>`|Texte en **gras**|
+|`Texte en __gras__`|`Texte en <strong>gras</strong>`|Texte en __gras__|
+|`Texte**en**gras`|`Texte<strong>en</strong>gras`|Texte**en**gras|
 
 ## Meilleures pratiques à propos des caractères gras
 
-~~✔️ À faire~~❌ À ne pas faire~~
-~~---~~---~~
-~~`Texte**en**gras`~~`Texte__en__gras`~~
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`Texte**en**gras`|`Texte__en__gras`|
 
 ## Texte en italique
 
 Pour mettre ton texte en italique, ajoutes un astérisque (`*`) ou un tiret bas (`_`) avant et après ton mot ou ta phrase. Pour mettre en italique seulement le milieu d'un mot, ajoutes un astérisque sans espaces autour des lettres.
 
-~~Markdown~~HTML~~Rendu~~
-~~---~~---~~---~~
-~~`Texte en *italique*`~~`Texte en <em>italique</em>`~~Texte en *italique*~~
-~~`Texte en _italique_`~~`Texte en <em>italique</em>`~~Texte en _italique_~~
-~~`Texte*en*gras`~~`Texte<em>en</em>italique`~~Texte*en*italique~~
+|Markdown|HTML|Rendu|
+|---|---|---|
+|`Texte en *italique*`|`Texte en <em>italique</em>`|Texte en *italique*|
+|`Texte en _italique_`|`Texte en <em>italique</em>`|Texte en _italique_|
+|`Texte*en*gras`|`Texte<em>en</em>italique`|Texte*en*italique|
 
 ## Meilleures pratiques à propos des caractères gras
 
-~~✔️ À faire~~❌ À ne pas faire~~
-~~---~~---~~
-~~`Texte*en*gras`~~`Texte_en_gras`~~
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`Texte*en*gras`|`Texte_en_gras`|
 
 ## Texte en gras ET en italique
 
 Pour mettre ton texte en gras et en italique, ajoutes trois astérisques (`***`) ou trois tirets bas (`___`) avant et après ton mot ou ta phrase. Pour mettre en gras et en italique seulement le milieu d'un mot, ajoutes trois astérisques sans espaces autour des lettres.
 
-~~Markdown~~HTML~~Rendu~~
-~~---~~---~~---~~
-~~`Texte très ***important***`~~`Texte très <strong><em>important</em></strong>`~~Texte très ***important***~~
-~~`Texte très ___important___`~~`Texte très <strong><em>important</em></strong>`~~Texte très ___important___~~
-~~`Texte très __*important*__`~~`Texte très <strong><em>important</em></strong>`~~Texte très __*important*__~~
-~~`Texte très **_important_**`~~`Texte très <strong><em>important</em></strong>`~~Texte très **_important_**~~
-~~`Texte***très***important`~~`Texte<strong><em>très</em></strong>important`~~Texte***très***important~~
+|Markdown|HTML|Rendu|
+|---|---|---|
+|`Texte très ***important***`|`Texte très <strong><em>important</em></strong>`|Texte très ***important***|
+|`Texte très ___important___`|`Texte très <strong><em>important</em></strong>`|Texte très ___important___|
+|`Texte très __*important*__`|`Texte très <strong><em>important</em></strong>`|Texte très __*important*__|
+|`Texte très **_important_**`|`Texte très <strong><em>important</em></strong>`|Texte très **_important_**|
+|`Texte***très***important`|`Texte<strong><em>très</em></strong>important`|Texte***très***important|
 
 ## Meilleures pratiques à propos des caractères gras
 
-~~✔️ À faire~~❌ À ne pas faire~~
-~~---~~---~~
-~~`Texte***très***important`~~`Texte___très___important`~~
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`Texte***très***important`|`Texte___très___important`|
 
 # Les citations
 
@@ -199,9 +199,9 @@ donnera :
 
 Par soucis de compatibilité, ajoutes toujours des lignes vides avant et après les citations.
 
-~~✔️ À faire~~❌ À ne pas faire~~
-~~---~~---~~
-~~`bla bla avant`<br><br>`> Ceci est une citation`<br><br>`bla bla après`~~`bla bla avant`<br>`> Ceci est une citation`<br>`bla bla après`~~
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`bla bla avant`<br><br>`> Ceci est une citation`<br><br>`bla bla après`|`bla bla avant`<br>`> Ceci est une citation`<br>`bla bla après`|
 
 # Les listes
 
@@ -211,37 +211,37 @@ Tu peux organiser les éléments en listes ordonnées et non ordonnées.
 
 Les listes ordonnées commencent par des nombres suivis d'un point. Les nombres n'ont pas besoin d'être dans l'ordre numérique. Certaines applications ont besoin que la liste commence par 1.
 
-~~Markdown~~HTML~~Rendu~~
-~~---~~---~~---~~
-~~`1. Un`<br>`2. Deux`<br>`3. Trois`<br>`4. Quatre`~~`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ol>`~~<ol><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ol>~~
-~~`1. Un`<br>`1. Deux`<br>`1. Trois`<br>`1. Quatre`~~`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ol>`~~<ol><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ol>~~
-~~`1. Un`<br>`8. Deux`<br>`3. Trois`<br>`5. Quatre`~~`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ol>`~~<ol><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ol>~~
-~~`1. Un`<br>`2. Deux`<br>&nbsp;&nbsp;&nbsp;&nbsp;`1. UnUn`<br>&nbsp;&nbsp;&nbsp;&nbsp;`2. DeuxDeux`<br>`3. Trois`~~`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<ol>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>UnUn</li>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>DeuxDeux</li>`<br>`</ol>`<br>`<li>Trois</li>`<br>`</ol>`~~<ol><li>Un</li><li>Deux</li><ol><li>UnUn</li><li>DeuxDeux</li></ol><li>Trois</li></ol>~~
+|Markdown|HTML|Rendu|
+|---|---|---|
+|`1. Un`<br>`2. Deux`<br>`3. Trois`<br>`4. Quatre`|`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ol>`|<ol><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ol>|
+|`1. Un`<br>`1. Deux`<br>`1. Trois`<br>`1. Quatre`|`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ol>`|<ol><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ol>|
+|`1. Un`<br>`8. Deux`<br>`3. Trois`<br>`5. Quatre`|`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ol>`|<ol><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ol>|
+|`1. Un`<br>`2. Deux`<br>&nbsp;&nbsp;&nbsp;&nbsp;`1. UnUn`<br>&nbsp;&nbsp;&nbsp;&nbsp;`2. DeuxDeux`<br>`3. Trois`|`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<ol>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>UnUn</li>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>DeuxDeux</li>`<br>`</ol>`<br>`<li>Trois</li>`<br>`</ol>`|<ol><li>Un</li><li>Deux</li><ol><li>UnUn</li><li>DeuxDeux</li></ol><li>Trois</li></ol>|
 
 ## Meilleures pratiques à propos des listes ordonnées
 
-~~✔️ À faire~~❌ À ne pas faire~~
-~~---~~---~~
-~~`1. First item`<br>`2. Second item`~~`1) First item`<br>`2) Second item`~~
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`1. First item`<br>`2. Second item`|`1) First item`<br>`2) Second item`|
 
 ## Liste non ordonnée
 
 Les listes non ordonnées commencent soit par des tirets (`-`), soit par des astérisques (`*`), soit par des plus (`+`) devant les lignes. Tu peux indenter un ou plusieurs items pour créer une liste imbriquée.
 
-~~Markdown~~HTML~~Rendu~~
-~~---~~---~~---~~
-~~`- Un`<br>`- Deux`<br>`- Trois`<br>`- Quatre`~~`<ul>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ul>`~~<ul><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ul>~~
-~~`* Un`<br>`* Deux`<br>`* Trois`<br>`* Quatre`~~`<ul>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ul>`~~<ul><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ul>~~
-~~`+ Un`<br>`+ Deux`<br>`+ Trois`<br>`+ Quatre`~~`<ul>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ul>`~~<ul><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ul>~~
-~~`- Un`<br>`- Deux`<br>&nbsp;&nbsp;&nbsp;&nbsp;`- UnUn`<br>&nbsp;&nbsp;&nbsp;&nbsp;`- DeuxDeux`<br>`- Trois`~~`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<ol>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>UnUn</li>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>DeuxDeux</li>`<br>`</ol>`<br>`<li>Trois</li>`<br>`</ol>`~~<ul><li>Un</li><li>Deux</li><ul><li>UnUn</li><li>DeuxDeux</li></ul><li>Trois</li></ul>~~
+|Markdown|HTML|Rendu|
+|---|---|---|
+|`- Un`<br>`- Deux`<br>`- Trois`<br>`- Quatre`|`<ul>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ul>`|<ul><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ul>|
+|`* Un`<br>`* Deux`<br>`* Trois`<br>`* Quatre`|`<ul>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ul>`|<ul><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ul>|
+|`+ Un`<br>`+ Deux`<br>`+ Trois`<br>`+ Quatre`|`<ul>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<li>Trois</li>`<br>`<li>Quatre</li>`<br>`</ul>`|<ul><li>Un</li><li>Deux</li><li>Trois</li><li>Quatre</li></ul>|
+|`- Un`<br>`- Deux`<br>&nbsp;&nbsp;&nbsp;&nbsp;`- UnUn`<br>&nbsp;&nbsp;&nbsp;&nbsp;`- DeuxDeux`<br>`- Trois`|`<ol>`<br>`<li>Un</li>`<br>`<li>Deux</li>`<br>`<ol>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>UnUn</li>`<br>&nbsp;&nbsp;&nbsp;&nbsp;`<li>DeuxDeux</li>`<br>`</ol>`<br>`<li>Trois</li>`<br>`</ol>`|<ul><li>Un</li><li>Deux</li><ul><li>UnUn</li><li>DeuxDeux</li></ul><li>Trois</li></ul>|
 
 ## Meilleures pratiques à propos des listes non ordonnées
 
 Encore une fois, les applications Markdown ne gèrent pas toutes de la même façon les différents délimiteurs dans la même liste. Pour une meilleure compatibilité, ne mélange pas les délimiteurs dans la même liste. Choisis en un et gardes le.
 
-~~✔️ À faire~~❌ À ne pas faire~~
-~~---~~---~~
-~~`- Un`<br>`- Deux`<br>`- Trois`<br>`- Quatre`~~`+ Un`<br>`* Deux`<br>`- Trois`<br>`+ Quatre`~~
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`- Un`<br>`- Deux`<br>`- Trois`<br>`- Quatre`|`+ Un`<br>`* Deux`<br>`- Trois`<br>`+ Quatre`|
 
 # Ajouter un élément à une liste 
 
@@ -349,17 +349,17 @@ Pour ajouter un élément à une liste tout en préservant la continuité de la 
 
 Pour signaler qu'un mot ou qu'une phrase est du code, entoures la d'accents graves ou backticks (`` ` ``).
 
-~~Markdown~~HTML~~Rendu~~
-~~---~~---~~---~~
-~~``Dans le cmd, tapez `nano` ``~~`Dans le cmd, tapez <code>nano</code>`~~Dans le cmd, tapez `nano`~~
+|Markdown|HTML|Rendu|
+|---|---|---|
+|``Dans le cmd, tapez `nano` ``|`Dans le cmd, tapez <code>nano</code>`|Dans le cmd, tapez `nano`|
 
 ## Échapper les backticks
 
 Si le mot ou la phrase que tu veux désigner comme code comprend un ou plusieurs backticks, tu peux l'échapper en entourant le mot ou la phrase de doubles backticks (``).
 
-~~Markdown~~HTML~~Rendu~~
-~~---~~---~~---~~
-~~``` ``Utilisez `code` dans les fichiers md``  ```~~``<code>Utilisez `code` dans les fichiers md</code>``~~ ``Utilisez `code` dans les fichiers md``  ~~
+|Markdown|HTML|Rendu|
+|---|---|---|
+|``` ``Utilisez `code` dans les fichiers md``  ```|``<code>Utilisez `code` dans les fichiers md</code>``| ``Utilisez `code` dans les fichiers md``  |
 
 # Bloc de code
 
@@ -480,9 +480,9 @@ _______________________
 
 <br>
 
-~~✔️ À faire~~❌ À ne pas faire~~
-~~---~~---~~
-~~`Mettez une ligne vide avant ...`<br><br>`---`<br><br>`... et une après.`~~`Sans les lignes vides, l'élément deviendrait un titre.`<br>`---`<br>`Donc ne faites pas ça!`~~
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`Mettez une ligne vide avant ...`<br><br>`---`<br><br>`... et une après.`|`Sans les lignes vides, l'élément deviendrait un titre.`<br>`---`<br>`Donc ne faites pas ça!`|
 
 # Les liens
 
@@ -619,9 +619,9 @@ et l'HTML généré serait également le même :
 
 Par soucis de compatibilité, il vaut mieux encoder les caractères spéciaux dans les URLs, comme les espaces qui se transforment en `%20`.
 
-~~✔️ À faire~~❌ À ne pas faire~~
-~~---~~---~~
-~~`[link](https://www.exemple.fr/un%20exemple/)`~~`[link](https://www.exemple.fr/un exemple/`~~
+|✔️ À faire|❌ À ne pas faire|
+|---|---|
+|`[link](https://www.exemple.fr/un%20exemple/)`|`[link](https://www.exemple.fr/un exemple/`|
 
 # Images
 
@@ -656,7 +656,7 @@ donnera :
 
 Voici une liste des caractères que tu peux échapper :
 
-``\\ \` \* \_ \{ \} \[ \] \< \> \( \) \# \+ \- \. \! \~~``
+``\\ \` \* \_ \{ \} \[ \] \< \> \( \) \# \+ \- \. \! \|``
 
 # HTML
 Certaines applications Markdown permettent l'utilisation des balises HTML. C'est utile pour certaines personnes qui préfèrent la syntaxe HTML pour les images. Les balises HTML sont aussi utiles pour changer la couleur du texte ou changer la taille d'une image. 
@@ -709,42 +709,42 @@ Tu peux également formater le texte dans les tableaux à l'aide des emphases vu
 La largeur des cellules peuvent varier, le tableau aura le même rendu.
 
 ```
-~~ Syntaxe     ~~ Description ~~
-~~ ----------- ~~ ----------- ~~
-~~ En-tête     ~~ **Titre**   ~~
-~~ Paragraphe  ~~ Texte       ~~
+| Syntaxe     | Description |
+| ----------- | ----------- |
+| En-tête     | **Titre**   |
+| Paragraphe  | Texte       |
 
-~~ Syntax~~ Description ~~
-~~ --- ~~ ----------- ~~
-~~En-tête~~ **Titre**~~
-~~Paragraphe ~~ Texte       ~~
+| Syntax| Description |
+| --- | ----------- |
+|En-tête| **Titre**|
+|Paragraphe | Texte       |
 ```
 
 donnera : 
 
-~~ _Syntaxe_   ~~ Description ~~
-~~ ----------- ~~ ----------- ~~
-~~ En-tête     ~~ **Titre**   ~~
-~~ Paragraphe  ~~ Texte       ~~
+| _Syntaxe_   | Description |
+| ----------- | ----------- |
+| En-tête     | **Titre**   |
+| Paragraphe  | Texte       |
 
-~~ _Syntaxe_~~ Description ~~
-~~ --- ~~ ----------- ~~
-~~En-tête~~ **Titre**~~
-~~Paragraphe ~~ Texte       ~~
+| _Syntaxe_| Description |
+| --- | ----------- |
+|En-tête| **Titre**|
+|Paragraphe | Texte       |
 
 Tu peux aussi aligner les éléments du tableau en ajoutant deux points (`:`) à certains endroits. Il s'appliquera alors à **toute la colonne**.
 
 ```
-~~ Gauche      ~~ Centré      ~~ Droite        ~~
-~~ :---        ~~    :----:   ~~          ---: ~~
-~~ Un          ~~ Trois       ~~ Cinq          ~~
-~~ Deux        ~~ Quatre      ~~ Six           ~~
+| Gauche      | Centré      | Droite        |
+| :---        |    :----:   |          ---: |
+| Un          | Trois       | Cinq          |
+| Deux        | Quatre      | Six           |
 ```
 
-~~ Gauche      ~~ Centré      ~~ Droite        ~~
-~~ :---        ~~    :----:   ~~          ---: ~~
-~~ Un          ~~ Trois       ~~ Cinq          ~~
-~~ Deux        ~~ Quatre      ~~ Six           ~~
+| Gauche      | Centré      | Droite        |
+| :---        |    :----:   |          ---: |
+| Un          | Trois       | Cinq          |
+| Deux        | Quatre      | Six           |
 
 ## Liste de tâches
 
