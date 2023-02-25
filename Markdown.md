@@ -784,7 +784,6 @@ On l'a vu plus haut, certaines applications Markdown lient automatiquement les l
 >  Ceci est un lien désactivé : `http://exemple.com` 
 
 ## LaTeX
-##### *`ne fonctionne pas sur Github, une image est tout de même là pour illustrer`*
 
 - Formules mathématiques avec LaTeX
 
@@ -794,7 +793,9 @@ x = {-b \pm \sqrt{b^2-4ac} \over 2a}
 $$
 ```
 
-![formule LaTeX](./img/formule.PNG "formule latex")
+$$
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+$$
 
 ## Diagrammes UML
 ##### *`ne fonctionne pas sur Github, une image est tout de même là pour illustrer`*
